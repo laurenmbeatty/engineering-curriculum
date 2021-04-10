@@ -71,11 +71,11 @@ function App() {
           </Text>
         </FlexBox>
         <Notes>
-          <Text>
+          <Text fontSize="2rem">
             Hi, everyone, and welcome! I'm excited to be here talking about
             TD-Stylekit
           </Text>
-          <Text>
+          <Text fontSize="2rem">
             My name is Lauren Beatty and I'm a Senior Frontend Engineer and Team
             Lead on the Frontend Team. I've been with Treasure Data for 2 years
             now
@@ -106,15 +106,17 @@ function App() {
           </FlexBox>
         </FlexBox>
         <Notes>
-          <Text>
+          <Text fontSize="2rem">
             Within the Frontend team we have several sub-teams now, and the team
             I lead is TEAM_SCREAMING_SNAKE. We cover Integrations Hub, and are
             the owners of TD-Stylekit
           </Text>
-          <Text>
+          <Text fontSize="2rem">
             This is a really different structure from when I started. I think
             when I started 2 years ago there were 6 of us(?) working under Mike
-            McElroy, and we were all just one little team.
+            McElroy, and we were all just one little team. It has important
+            implications for how we work now, and how we think about how we
+            develop in Stylekit.
           </Text>
         </Notes>
       </Slide>
@@ -127,11 +129,21 @@ function App() {
             <ListItem>CX/UX/DevX? 👩‍💻</ListItem>
           </OrderedList>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            Today I'm going to talk about Stylekit. What is it? Who are the
+            customers we serve? and finally, I'll do more of a deep-dive into
+            how we think about the Developer Experience.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1}>
           <Heading fontSize="5rem">What is td-stylekit?</Heading>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">So, what is td-stylekit?</Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox justifyContent="space-evenly" flexGrow={1}>
@@ -144,6 +156,14 @@ function App() {
             <Image alt="tree" src={tree} className="img-right" />
           </Grid>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            Stylekit is really 2 things. 1. it's the component library that's
+            used in our FE products and beyond, and 2. it's the documentation of
+            those components that's really intended for both our Design team and
+            our FE Team.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox justifyContent="space-evenly" flexGrow={1}>
