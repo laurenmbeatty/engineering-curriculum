@@ -48,6 +48,7 @@ import evangelize from './assets/evangelize.gif'
 import document from './assets/document.png'
 import histoTwo from './assets/histoTwo.png'
 import histoThree from './assets/histoThree.png'
+import build from './assets/build.gif'
 
 function App() {
   return (
@@ -361,6 +362,12 @@ function App() {
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Document</Heading>
           <Image src={document} width="70%" />
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox flexGrow={1} flexDirection="column">
+          <Heading fontSize="4rem">Done! 🎉</Heading>
+          <Image src={build} width="70%" />
         </FlexBox>
       </Slide>
       <Slide>
