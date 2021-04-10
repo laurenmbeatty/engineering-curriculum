@@ -140,7 +140,10 @@ function App() {
       </Slide>
       <Slide>
         <FlexBox justifyContent="space-evenly" flexGrow={1}>
-          <Heading fontSize="5rem">Stylekit Consumers</Heading>
+          <Heading fontSize="5rem" textAlign="left">
+            Stylekit <br />
+            Consumers
+          </Heading>
           <OrderedList>
             <ListItem>td-console</ListItem>
             <ListItem>td-crystal</ListItem>
