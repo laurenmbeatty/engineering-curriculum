@@ -19,6 +19,7 @@ import {
   Image,
   CodePane,
   Notes,
+  Link,
 } from 'spectacle'
 
 import chris from './assets/chris.png'
@@ -109,6 +110,32 @@ function App() {
           <Box>
             <Image alt="npm" src={npm} />
           </Box>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox justifyContent="space-evenly" flexGrow={1}>
+          <Heading fontSize="5rem" textAlign="left">
+            Automated Release
+          </Heading>
+          <OrderedList>
+            <ListItem>
+              Via{' '}
+              <Link
+                href="https://github.com/semantic-release/semantic-release"
+                target="_blank"
+              >
+                semantic-release
+              </Link>
+            </ListItem>
+            <ListItem>Fully automated</ListItem>
+            <ListItem>
+              Follows{' '}
+              <Link href="https://semver.org/" target="_blank">
+                Semantic Versioning
+              </Link>
+            </ListItem>
+            <ListItem>Automatic Changelog</ListItem>
+          </OrderedList>
         </FlexBox>
       </Slide>
     </Deck>
