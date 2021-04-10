@@ -45,6 +45,9 @@ import primer from './assets/primer.png'
 import reach from './assets/reach.png'
 import semantic from './assets/semantic.png'
 import evangelize from './assets/evangelize.gif'
+import document from './assets/document.png'
+import histoTwo from './assets/histoTwo.png'
+import histoThree from './assets/histoThree.png'
 
 function App() {
   return (
@@ -348,13 +351,27 @@ function App() {
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Make it Flexible</Heading>
-          <Image src={todoTests} width="70%" />
+          <FlexBox justifyContent="space-evenly" flexGrow={1}>
+            <Image src={histoTwo} width="45%" />
+            <Image src={histoThree} width="45%" />
+          </FlexBox>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox flexGrow={1} flexDirection="column">
+          <Heading fontSize="4rem">Document</Heading>
+          <Image src={document} width="70%" />
         </FlexBox>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Evangelize</Heading>
           <Image src={evangelize} width="70%" />
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox flexGrow={1}>
+          <Heading fontSize="5rem">Thank you! 👋</Heading>
         </FlexBox>
       </Slide>
     </Deck>
