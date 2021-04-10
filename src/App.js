@@ -70,6 +70,17 @@ function App() {
             Lauren Beatty, Senior Frontend Engineer and Team Lead
           </Text>
         </FlexBox>
+        <Notes>
+          <Text>
+            Hi, everyone, and welcome! I'm excited to be here talking about
+            TD-Stylekit
+          </Text>
+          <Text>
+            My name is Lauren Beatty and I'm a Senior Frontend Engineer and Team
+            Lead on the Frontend Team. I've been with Treasure Data for 2 years
+            now
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox
@@ -94,6 +105,18 @@ function App() {
             </FlexBox>
           </FlexBox>
         </FlexBox>
+        <Notes>
+          <Text>
+            Within the Frontend team we have several sub-teams now, and the team
+            I lead is TEAM_SCREAMING_SNAKE. We cover Integrations Hub, and are
+            the owners of TD-Stylekit
+          </Text>
+          <Text>
+            This is a really different structure from when I started. I think
+            when I started 2 years ago there were 6 of us(?) working under Mike
+            McElroy, and we were all just one little team.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox justifyContent="space-evenly" flexGrow={1}>
