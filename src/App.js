@@ -29,6 +29,19 @@ import grid from './assets/grid.png'
 import pie from './assets/pie.png'
 import tree from './assets/tree.png'
 import npm from './assets/npm.png'
+import primaryText from './assets/primaryText.png'
+import heading from './assets/heading.png'
+import badges from './assets/badges.png'
+import datePicker from './assets/datePicker.png'
+import formControl from './assets/formControl.png'
+import cssGrid from './assets/cssGrid.png'
+import modal from './assets/modal.png'
+import dataGrid from './assets/dataGrid.png'
+import treeTwo from './assets/treeTwo.png'
+import storybook from './assets/storybook.png'
+import checkboxGif from './assets/checkboxGif.gif'
+import codeSnippet from './assets/codeSnippet.png'
+import todo from './assets/todo.png'
 
 function App() {
   return (
@@ -139,16 +152,146 @@ function App() {
         </FlexBox>
       </Slide>
       <Slide>
+        <FlexBox
+          justifyContent="space-evenly"
+          flexGrow={1}
+          flexDirection="column"
+        >
+          <Heading fontSize="4rem" textAlign="left">
+            Text-based Components
+          </Heading>
+          <FlexBox justifyContent="space-evenly" width="100%">
+            <Image src={primaryText} />
+            <Image src={heading} />
+          </FlexBox>
+          <Image src={badges} />
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox
+          justifyContent="space-evenly"
+          flexGrow={1}
+          flexDirection="column"
+        >
+          <Heading fontSize="4rem" textAlign="left">
+            Form Elements
+          </Heading>
+          <FlexBox justifyContent="space-evenly" width="100%">
+            <Image src={datePicker} />
+            <Image src={formControl} />
+          </FlexBox>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox
+          justifyContent="space-evenly"
+          flexGrow={1}
+          flexDirection="column"
+        >
+          <Heading fontSize="4rem" textAlign="left">
+            Layout Components
+          </Heading>
+          <FlexBox justifyContent="space-evenly" width="100%">
+            <Image src={cssGrid} width="40%" height="auto" />
+            <Image src={modal} width="45%" height="auto" />
+          </FlexBox>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox
+          justifyContent="space-evenly"
+          flexGrow={1}
+          flexDirection="column"
+        >
+          <Heading fontSize="4rem" textAlign="left">
+            Display and Interact with Data
+          </Heading>
+          <FlexBox justifyContent="space-evenly" width="100%">
+            <Image src={dataGrid} />
+            <Image src={treeTwo} width="35%" height="auto" />
+          </FlexBox>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox justifyContent="space-evenly" flexGrow={1}>
+          <Heading fontSize="4rem" textAlign="left">
+            Robust <br /> Documentation
+          </Heading>
+          <Box>
+            <Image alt="npm" src={storybook} />
+          </Box>
+        </FlexBox>
+      </Slide>
+      <Slide>
         <FlexBox justifyContent="space-evenly" flexGrow={1}>
           <Heading fontSize="5rem" textAlign="left">
-            Stylekit <br />
-            Consumers
+            What is Storybook
           </Heading>
           <OrderedList>
-            <ListItem>td-console</ListItem>
-            <ListItem>td-crystal</ListItem>
-            <ListItem>Operate UI</ListItem>
+            <ListItem>Open Source tool for developing UI components</ListItem>
+            <ListItem>React, Vue, Angular</ListItem>
+            <ListItem>Component Sandbox</ListItem>
           </OrderedList>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox justifyContent="space-between" flexGrow={1}>
+          <Heading fontSize="4rem" textAlign="left">
+            Interactive <br /> Documentation
+          </Heading>
+          <Box>
+            <Image alt="npm" src={checkboxGif} width="95%" />
+          </Box>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox
+          justifyContent="space-evenly"
+          flexGrow={1}
+          flexDirection="column"
+        >
+          <Heading fontSize="4rem" textAlign="left">
+            Code Snippets
+          </Heading>
+          <FlexBox justifyContent="space-evenly" width="100%">
+            <Image src={codeSnippet} />
+          </FlexBox>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox flexGrow={1}>
+          <Heading fontSize="5rem">Who are our Customers?</Heading>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox justifyContent="space-evenly" flexGrow={1}>
+          <Heading fontSize="5rem" textAlign="left">
+            Stylekit Customers
+          </Heading>
+          <OrderedList>
+            <ListItem>Treasure Data Customers 💪</ListItem>
+            <ListItem>UX Team 🎨</ListItem>
+            <ListItem>Frontend Team 👩‍🎤</ListItem>
+          </OrderedList>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox
+          flexGrow={1}
+          alignContent="baseline"
+          justifyContent="space-evenly"
+        >
+          <Heading fontSize="5rem">Goal</Heading>
+          <Box width="60%">
+            <Text fontWeight={700} fontSize="4.5rem">
+              Fantastic Developer Experience ✨
+            </Text>
+          </Box>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox flexGrow={1}>
+          <Image src={todo} />
         </FlexBox>
       </Slide>
     </Deck>
