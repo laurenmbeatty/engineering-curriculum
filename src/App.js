@@ -42,6 +42,16 @@ import storybook from './assets/storybook.png'
 import checkboxGif from './assets/checkboxGif.gif'
 import codeSnippet from './assets/codeSnippet.png'
 import todo from './assets/todo.png'
+import histoOne from './assets/histoOne.png'
+import tooltips from './assets/tooltips.png'
+import direction from './assets/direction.png'
+import todoTests from './assets/todoTests.png'
+import material from './assets/material.png'
+import base from './assets/base.png'
+import primer from './assets/primer.png'
+import reach from './assets/reach.png'
+import semantic from './assets/semantic.png'
+import evangelize from './assets/evangelize.gif'
 
 function App() {
   return (
@@ -292,6 +302,66 @@ function App() {
       <Slide>
         <FlexBox flexGrow={1}>
           <Image src={todo} />
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox
+          justifyContent="space-evenly"
+          flexGrow={1}
+          flexDirection="column"
+        >
+          <Heading fontSize="4rem" textAlign="left">
+            Start with Design
+          </Heading>
+          <FlexBox justifyContent="space-evenly" width="80%">
+            <FlexBox>
+              <Image src={histoOne} />
+            </FlexBox>
+            <FlexBox flexDirection="column">
+              <Image src={tooltips} />
+              <Image src={direction} width="95%" />
+            </FlexBox>
+          </FlexBox>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox flexGrow={1} flexDirection="column">
+          <Heading fontSize="4rem">Write TODO Tests</Heading>
+          <Image src={todoTests} width="70%" />
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox flexGrow={1} flexDirection="column">
+          <Heading fontSize="3rem">Look for API Design Inspiration</Heading>
+          <FlexBox justifyContent="space-evenly" width="100%" flexGrow={1}>
+            <FlexBox flexDirection="column">
+              <Image src={material} />
+            </FlexBox>
+            <FlexBox
+              flexDirection="column"
+              height="100%"
+              justifyContent="space-evenly"
+            >
+              <Image src={primer} />
+              <Image src={base} />
+              <Image src={reach} />
+            </FlexBox>
+            <FlexBox flexDirection="column">
+              <Image src={semantic} />
+            </FlexBox>
+          </FlexBox>
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox flexGrow={1} flexDirection="column">
+          <Heading fontSize="4rem">Make it Flexible</Heading>
+          <Image src={todoTests} width="70%" />
+        </FlexBox>
+      </Slide>
+      <Slide>
+        <FlexBox flexGrow={1} flexDirection="column">
+          <Heading fontSize="4rem">Evangelize</Heading>
+          <Image src={evangelize} width="70%" />
         </FlexBox>
       </Slide>
     </Deck>
