@@ -1,54 +1,53 @@
 import React from 'react'
-import './App.css'
 import {
-  FlexBox,
-  Heading,
-  OrderedList,
-  ListItem,
-  Slide,
-  Deck,
-  Text,
-  Grid,
   Box,
+  Deck,
+  FlexBox,
+  Grid,
+  Heading,
   Image,
-  Notes,
   Link,
+  ListItem,
+  Notes,
+  OrderedList,
+  Slide,
+  Text,
 } from 'spectacle'
-
-import chris from './assets/chris.png'
-import lauren from './assets/lauren.png'
-import william from './assets/william.png'
-import grid from './assets/grid.png'
-import pie from './assets/pie.png'
-import tree from './assets/tree.png'
-import npm from './assets/npm.png'
-import primaryText from './assets/primaryText.png'
-import heading from './assets/heading.png'
+import './App.css'
 import badges from './assets/badges.png'
-import datePicker from './assets/datePicker.png'
-import formControl from './assets/formControl.png'
-import cssGrid from './assets/cssGrid.png'
-import modal from './assets/modal.png'
-import dataGrid from './assets/dataGrid.png'
-import treeTwo from './assets/treeTwo.png'
-import storybook from './assets/storybook.png'
-import checkboxGif from './assets/checkboxGif.gif'
-import codeSnippet from './assets/codeSnippet.png'
-import todo from './assets/todo.png'
-import histoOne from './assets/histoOne.png'
-import tooltips from './assets/tooltips.png'
-import direction from './assets/direction.png'
-import todoTests from './assets/todoTests.png'
-import material from './assets/material.png'
 import base from './assets/base.png'
+import build from './assets/build.gif'
+import checkboxGif from './assets/checkboxGif.gif'
+import chris from './assets/chris.png'
+import codeSnippet from './assets/codeSnippet.png'
+import cssGrid from './assets/cssGrid.png'
+import dataGrid from './assets/dataGrid.png'
+import datePicker from './assets/datePicker.png'
+import direction from './assets/direction.png'
+import document from './assets/document.png'
+import evangelize from './assets/evangelize.gif'
+import formControl from './assets/formControl.png'
+import grid from './assets/grid.png'
+import heading from './assets/heading.png'
+import histoOne from './assets/histoOne.png'
+import histoThree from './assets/histoThree.png'
+import histoTwo from './assets/histoTwo.png'
+import lauren from './assets/lauren.png'
+import material from './assets/material.png'
+import modal from './assets/modal.png'
+import npm from './assets/npm.png'
+import pie from './assets/pie.png'
+import primaryText from './assets/primaryText.png'
 import primer from './assets/primer.png'
 import reach from './assets/reach.png'
 import semantic from './assets/semantic.png'
-import evangelize from './assets/evangelize.gif'
-import document from './assets/document.png'
-import histoTwo from './assets/histoTwo.png'
-import histoThree from './assets/histoThree.png'
-import build from './assets/build.gif'
+import storybook from './assets/storybook.png'
+import todo from './assets/todo.png'
+import todoTests from './assets/todoTests.png'
+import tooltips from './assets/tooltips.png'
+import tree from './assets/tree.png'
+import treeTwo from './assets/treeTwo.png'
+import william from './assets/william.png'
 
 function App() {
   return (
