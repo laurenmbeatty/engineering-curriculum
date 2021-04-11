@@ -163,6 +163,10 @@ function App() {
             those components that's really intended for both our Design team and
             our FE Team.
           </Text>
+          <Text fontSize="2rem">
+            It was first conceived and developed 3 years ago. It includes around
+            50 different components.
+          </Text>
         </Notes>
       </Slide>
       <Slide>
@@ -174,6 +178,9 @@ function App() {
             <Image alt="npm" src={npm} />
           </Box>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">It's published on npm.</Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox justifyContent="space-evenly" flexGrow={1}>
@@ -200,6 +207,25 @@ function App() {
             <ListItem>Automatic Changelog</ListItem>
           </OrderedList>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            We use a package called semantic-release to manage our release
+            process. It's fully automated. Every time we merge into main, it
+            triggers the release of a new version.
+          </Text>
+          <Text fontSize="2rem">
+            The versioning follows Semantic Versioning, and the type of change
+            is triggered by the commit message. Each new version adds info to
+            the changelog and publishes info to a Slack channel via a webhook.
+          </Text>
+          <Text fontSize="2rem">
+            This is great for consumers of the library, because they can control
+            which features are included in their site. In particular with
+            td-crystal, we have a number of different github packages that are
+            independent. The codeowners have control over which version they
+            include, and when they incorporate new versions.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox
@@ -216,6 +242,14 @@ function App() {
           </FlexBox>
           <Image src={badges} />
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            Stylekit starts with very basic components that correspond to HTML
+            tags that feature text, like Paragraphs, Headings, spans. It
+            progresses to components that convey meaning with color and text
+            like badges.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox
@@ -231,6 +265,13 @@ function App() {
             <Image src={formControl} />
           </FlexBox>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            It includes Form elements like text, number inputs, selects,
+            datepickers. These can all be customized in various ways depending
+            on the use case.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox
@@ -246,6 +287,16 @@ function App() {
             <Image src={modal} width="45%" height="auto" />
           </FlexBox>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            It includes layout components that help control where things are
+            placed on the screen. This is a new CSS Grid component. And the
+            ever-popular modal. Modals are highly customizable, from a simple
+            confirmation, all the way up to the Advanced Segment Editor. Many of
+            our components are dual-purpose, and look one way for td-console,
+            and another for td-crystal.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox
@@ -261,6 +312,13 @@ function App() {
             <Image src={treeTwo} width="35%" height="auto" />
           </FlexBox>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            Probably the most complex components we have include those that
+            allow you to display and interact with data, like the DataGrid and
+            Tree.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox justifyContent="space-evenly" flexGrow={1}>
@@ -271,6 +329,14 @@ function App() {
             <Image alt="npm" src={storybook} />
           </Box>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            So, not only is stylekit an exported package of components published
+            as its own library, it's also a website with robust documentation on
+            those components. We manage the documentation with a library called
+            Storybook.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox justifyContent="space-evenly" flexGrow={1}>
@@ -283,6 +349,22 @@ function App() {
             <ListItem>Component Sandbox</ListItem>
           </OrderedList>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            Storybook started in 2016 by a startup in Sri Lanka called Kadira,
+            that was focused on Meteor development. It was eventually handed off
+            to the open source community in April 2017. It's popular for a
+            number of reasons, including it's pretty aggressive cadence for
+            releasing improvements.
+          </Text>
+          <Text fontSize="2rem">
+            It's really an environment for developing, defining and testing your
+            UI components. It allows you to show different versions of the
+            component via "stories." It's great for creating components in
+            isolation, and then being able to put them together in working
+            applications.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox justifyContent="space-between" flexGrow={1}>
@@ -293,6 +375,18 @@ function App() {
             <Image alt="npm" src={checkboxGif} width="95%" />
           </Box>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            One of the great features of Storybook is its interactive
+            Documentation. React-docgen builds prop tables for each component,
+            and then we can interact with them like a playground to show
+            different states of each component, without changing any code. This
+            is great for designers and those developers that aren't closely tied
+            to and invested in stylekit development. It gives them a quick way
+            to gain knowledge about a component without having to dig into the
+            code.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox
@@ -307,6 +401,14 @@ function App() {
             <Image src={codeSnippet} />
           </FlexBox>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            Each story will display the code snippet that is responsible for
+            that particular component state. This is super-handy for developers,
+            so they can just copy and paste right from storybook, so they can
+            get a quick start when using that component in context.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1}>
@@ -324,6 +426,17 @@ function App() {
             <ListItem>Frontend Team 👩‍🎤</ListItem>
           </OrderedList>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            Of course our customers are TD customers. We want to give them a
+            seamless, hassle-free experience. For UX, our goal is to build our
+            components as faithfully to their specifications as possible. I like
+            to think of Stylekit as really a collaboration between UX and FE.
+            Honestly, stylekit wouldn't exist without them. Finally, one of our
+            most important customer is the FE team itself. If we make components
+            they won't use, what is the point of stylekit?
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox
@@ -338,11 +451,30 @@ function App() {
             </Text>
           </Box>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            Over the past year of leading the Stylekit team, I've come to
+            realize that our over-arching goal is to create a fantastic
+            developer experience.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1}>
           <Image src={todo} />
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            This is the challenge!!! How to create components that not only meet
+            specs, but are straightforward and intuitive to use. It's not enough
+            to create something that just works.
+          </Text>
+          <Text fontSize="2rem">
+            I'm going to walk through the component development process through
+            the lens of a recent chart we created for the Predictive Scoring
+            project...a Histogram.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox
@@ -363,12 +495,45 @@ function App() {
             </FlexBox>
           </FlexBox>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            So, step one is really...start with the Design. We collaborate with
+            the UX team on a project to come up with a game plan. They design
+            something amazing, we work with them to decide what is possible, and
+            what is practical. Just because something is possible, doesn't
+            necessaryily mean it should be implemented, from an engineering
+            standpoint. We want to create components that are robust, extensible
+            and durable... i.e. not Buggy.
+          </Text>
+          <Text fontSize="2rem">
+            We work with design and iterate, and iterate and iterate until we
+            come up with something that we both think is great and doable. Oh,
+            and then we iterate some more. An important part of the process is
+            really knowing that things will change over time.
+          </Text>
+          <Text fontSize="2rem">
+            So from this "semi-final" version from design, I like to make a
+            checklist of features that I need to implement. So, looking at the
+            histogram, I know that in addition to regular chart-type things, I
+            need to have some extra dependent axes, I need the bars to be able
+            to vary in color, and I need to be able to stack sets of data.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Write TODO Tests</Heading>
           <Image src={todoTests} width="70%" />
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            From that checklist, I like to make some "TODO" tests. This is
+            really just a checklist in code form. It gives me a specific set of
+            steps to follow to reach my goal. It's a loose interpretation of
+            TDD, but it's been super useful for me as an engineer. It helps keep
+            me focused, and from going down rabbit holes.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
@@ -391,6 +556,23 @@ function App() {
             </FlexBox>
           </FlexBox>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            So, not only do we need to create a chart, right? We need to create
+            a chart that has an API that is pretty easy to use. I love looking
+            at other component libraries for inspiration. This inspiration is
+            two-fold. One, if I'm trying to implement a piece of functionality
+            in one of my components, it's nice to see how a different library
+            accomplished the same thing. Second, and most importantly, what does
+            that component's API look like? How do they go from a component that
+            works, to a component that others will gladly use. There are lots of
+            really smart engineers that have probably already solved the same
+            problem I'm trying to solve, so I'm going to lean on their
+            expertise. Back when I was a singer, and playing Eliza Doolittle in
+            My Fair Lady, I watched Audrey Hepburn, because you know what? She
+            really knew what she was doing.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
@@ -400,24 +582,87 @@ function App() {
             <Image src={histoThree} width="45%" />
           </FlexBox>
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            Next step is to make that component flexible. If there is anything
+            that developing in general that I've learned, it's that we're always
+            going to be changing and refactoring. The same goes for component
+            libraries. There will always be new use cases that arise, and it's
+            good to think of the future when developing. (Storybook really helps
+            with this). So, for example, we didnt' just create a histogram that
+            rendered specifically 2 sets of data in multi-colors. It can render
+            one set of data. It can change colors, it can include the dependent
+            axes or not. It has a sorting function if the developer needs to
+            change the order of their data sets. Does it need to be combined
+            with a slider? No way.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Document</Heading>
           <Image src={document} width="70%" />
         </FlexBox>
+        <Notes>
+          <Text fontSize="2rem">
+            This is one of the big efforts we've tried to improve about Stylekit
+            in general. William Gonzalez on my team has really helped us
+            incorporate the latest Storybook improvements so that we can better
+            document our components.
+          </Text>
+          <Text fontSize="2rem">
+            Like I mentioned previously, React-docgen publishes prop tables for
+            each component, what the type is, and we can interact with those
+            tables thanks to Storybook. React-docgen will also parse out our
+            comments for each prop type, so that we can give even more
+            information to developers.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Done! 🎉</Heading>
           <Image src={build} width="70%" />
         </FlexBox>
+        <Notes>
+          <Text>And then everything's perfect.</Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Evangelize</Heading>
           <Image src={evangelize} width="70%" />
         </FlexBox>
+        <Notes>
+          <Text>
+            Just kidding. In addition to building and documenting those
+            components, we have to communicate about them. If you build it,
+            honestly, the developers aren't just going to fawn over you
+            incessantly. You need to teach them how to use it.
+          </Text>
+          <Text>
+            We've recently started a weekly series of "Stylekit tips" videos
+            that we share with development and design folks. It's a fun way to
+            communicate what we're doing, and gives devs bite-sized info that
+            they can refer back to later. I'll introduce a component and its
+            features, do a refactor using a new component, or just talk about
+            features about particular components that maybe devs don't know
+            about, but could really help them in their work. We collect all of
+            these videos on a page in Confluence, and there's a place where
+            developers can make suggestions for future videos that they'd like
+            to see.
+          </Text>
+          <Text>
+            As a frontend team, we've been very busy over the past year building
+            out td-crystal. At the same time, we've been pushing ourselves to
+            get much better at writing documentation. One of the most gratifying
+            things that happened to me recently, was linking out to some
+            documentation that I wrote to one of my colleagues, that I thought
+            probably no one but me or my team might ever need, but they did, and
+            now we have this process well-documented, so people without the full
+            context can accomplish the task.
+          </Text>
+        </Notes>
       </Slide>
       <Slide>
         <FlexBox flexGrow={1}>
