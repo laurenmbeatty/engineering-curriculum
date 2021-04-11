@@ -236,10 +236,10 @@ function App() {
             Text-based Components
           </Heading>
           <FlexBox justifyContent="space-evenly" width="100%">
-            <Image src={primaryText} />
-            <Image src={heading} />
+            <Image alt="text component" src={primaryText} />
+            <Image alt="heading component" src={heading} />
           </FlexBox>
-          <Image src={badges} />
+          <Image alt="badges component" src={badges} />
         </FlexBox>
         <Notes>
           <Text fontSize="2rem">
@@ -260,8 +260,8 @@ function App() {
             Form Elements
           </Heading>
           <FlexBox justifyContent="space-evenly" width="100%">
-            <Image src={datePicker} />
-            <Image src={formControl} />
+            <Image alt="date picker component" src={datePicker} />
+            <Image alt="form control component" src={formControl} />
           </FlexBox>
         </FlexBox>
         <Notes>
@@ -282,8 +282,18 @@ function App() {
             Layout Components
           </Heading>
           <FlexBox justifyContent="space-evenly" width="100%">
-            <Image src={cssGrid} width="40%" height="auto" />
-            <Image src={modal} width="45%" height="auto" />
+            <Image
+              alt="css grid component"
+              src={cssGrid}
+              width="40%"
+              height="auto"
+            />
+            <Image
+              alt="modal component"
+              src={modal}
+              width="45%"
+              height="auto"
+            />
           </FlexBox>
         </FlexBox>
         <Notes>
@@ -307,8 +317,13 @@ function App() {
             Display and Interact with Data
           </Heading>
           <FlexBox justifyContent="space-evenly" width="100%">
-            <Image src={dataGrid} />
-            <Image src={treeTwo} width="35%" height="auto" />
+            <Image alt="data grid component" src={dataGrid} />
+            <Image
+              alt="tree component"
+              src={treeTwo}
+              width="35%"
+              height="auto"
+            />
           </FlexBox>
         </FlexBox>
         <Notes>
@@ -325,7 +340,7 @@ function App() {
             Robust <br /> Documentation
           </Heading>
           <Box>
-            <Image alt="npm" src={storybook} />
+            <Image alt="storybook logo" src={storybook} />
           </Box>
         </FlexBox>
         <Notes>
@@ -371,7 +386,11 @@ function App() {
             Interactive <br /> Documentation
           </Heading>
           <Box>
-            <Image alt="npm" src={checkboxGif} width="95%" />
+            <Image
+              alt="animation of checkbox documentation"
+              src={checkboxGif}
+              width="95%"
+            />
           </Box>
         </FlexBox>
         <Notes>
@@ -397,7 +416,7 @@ function App() {
             Code Snippets
           </Heading>
           <FlexBox justifyContent="space-evenly" width="100%">
-            <Image src={codeSnippet} />
+            <Image alt="code snippet" src={codeSnippet} />
           </FlexBox>
         </FlexBox>
         <Notes>
@@ -460,7 +479,10 @@ function App() {
       </Slide>
       <Slide>
         <FlexBox flexGrow={1}>
-          <Image src={todo} />
+          <Image
+            alt="How do you create a great developer experience?"
+            src={todo}
+          />
         </FlexBox>
         <Notes>
           <Text fontSize="2rem">
@@ -486,11 +508,15 @@ function App() {
           </Heading>
           <FlexBox justifyContent="space-evenly" width="80%">
             <FlexBox>
-              <Image src={histoOne} />
+              <Image alt="histogram component" src={histoOne} />
             </FlexBox>
             <FlexBox flexDirection="column">
-              <Image src={tooltips} />
-              <Image src={direction} width="95%" />
+              <Image alt="tooltips for histogram" src={tooltips} />
+              <Image
+                alt="notecard with directions from UX team"
+                src={direction}
+                width="95%"
+              />
             </FlexBox>
           </FlexBox>
         </FlexBox>
@@ -522,7 +548,7 @@ function App() {
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Write TODO Tests</Heading>
-          <Image src={todoTests} width="70%" />
+          <Image alt="todo tests in code" src={todoTests} width="70%" />
         </FlexBox>
         <Notes>
           <Text fontSize="2rem">
@@ -539,19 +565,19 @@ function App() {
           <Heading fontSize="3rem">Look for API Design Inspiration</Heading>
           <FlexBox justifyContent="space-evenly" width="100%" flexGrow={1}>
             <FlexBox flexDirection="column">
-              <Image src={material} />
+              <Image alt="material ui logo" src={material} />
             </FlexBox>
             <FlexBox
               flexDirection="column"
               height="100%"
               justifyContent="space-evenly"
             >
-              <Image src={primer} />
-              <Image src={base} />
-              <Image src={reach} />
+              <Image alt="primer from github logo" src={primer} />
+              <Image alt="baseweb from uber logo" src={base} />
+              <Image alt="logo from reachui" src={reach} />
             </FlexBox>
             <FlexBox flexDirection="column">
-              <Image src={semantic} />
+              <Image alt="logo from semantic ui" src={semantic} />
             </FlexBox>
           </FlexBox>
         </FlexBox>
@@ -577,8 +603,16 @@ function App() {
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Make it Flexible</Heading>
           <FlexBox justifyContent="space-evenly" flexGrow={1}>
-            <Image src={histoTwo} width="45%" />
-            <Image src={histoThree} width="45%" />
+            <Image
+              alt="histogram with only one color"
+              src={histoTwo}
+              width="45%"
+            />
+            <Image
+              alt="histogram with slider and multiple axes and multiple colors"
+              src={histoThree}
+              width="45%"
+            />
           </FlexBox>
         </FlexBox>
         <Notes>
@@ -600,7 +634,11 @@ function App() {
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Document</Heading>
-          <Image src={document} width="70%" />
+          <Image
+            alt="interactive props table for Histogram in Storybook"
+            src={document}
+            width="70%"
+          />
         </FlexBox>
         <Notes>
           <Text fontSize="2rem">
@@ -621,7 +659,11 @@ function App() {
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Done! 🎉</Heading>
-          <Image src={build} width="70%" />
+          <Image
+            alt="gif from Field of Dreams. If you build it, they will come."
+            src={build}
+            width="70%"
+          />
         </FlexBox>
         <Notes>
           <Text>And then everything's perfect.</Text>
@@ -630,7 +672,11 @@ function App() {
       <Slide>
         <FlexBox flexGrow={1} flexDirection="column">
           <Heading fontSize="4rem">Evangelize</Heading>
-          <Image src={evangelize} width="70%" />
+          <Image
+            alt="gif of video demonstrating new Histogram component to team"
+            src={evangelize}
+            width="70%"
+          />
         </FlexBox>
         <Notes>
           <Text>
