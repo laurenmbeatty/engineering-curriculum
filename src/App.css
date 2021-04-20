@@ -39,6 +39,8 @@
 
 .img {
   border-radius: 50%;
+  width: 233px;
+  height: 233px;
 }
 .img-header {
   grid-area: header;

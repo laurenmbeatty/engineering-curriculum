@@ -41,6 +41,7 @@ import primaryText from './assets/primaryText.png'
 import primer from './assets/primer.png'
 import reach from './assets/reach.png'
 import semantic from './assets/semantic.png'
+import son from './assets/son.png'
 import storybook from './assets/storybook.png'
 import todo from './assets/todo.png'
 import todoTests from './assets/todoTests.png'
@@ -89,18 +90,29 @@ function App() {
           alignItems="flex-start"
         >
           <Heading>TEAM_SCREAMING_SNAKE 🐍</Heading>
-          <FlexBox justifyContent="space-evenly" width="100%">
+          <FlexBox
+            justifyContent="space-evenly"
+            width="100%"
+            alignItems="baseline"
+          >
             <FlexBox flexDirection="column">
               <Image alt="Chris Jaure" src={chris} className="img" />
-              <Text>Chris Jaure</Text>
+              <Text textAlign="center">Chris Jaure</Text>
             </FlexBox>
             <FlexBox flexDirection="column">
               <Image alt="William Gonzalez" src={william} className="img" />
-              <Text>William Gonzalez</Text>
+              <Text textAlign="center">William Gonzalez</Text>
+            </FlexBox>
+            <FlexBox flexDirection="column">
+              <Image alt="Son Do" src={son} className="img" />
+              <Text textAlign="center">
+                Son Do <br />
+                <em>Guest Artist</em>
+              </Text>
             </FlexBox>
             <FlexBox flexDirection="column">
               <Image alt="Lauren Beatty" src={lauren} className="img" />
-              <Text>Lauren Beatty</Text>
+              <Text textAlign="center">Lauren Beatty</Text>
             </FlexBox>
           </FlexBox>
         </FlexBox>
